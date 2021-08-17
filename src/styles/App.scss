@@ -1,0 +1,71 @@
+$basecolor: #e0e0e0;
+@mixin shadow {
+  border-radius: 15px;
+  background: $basecolor;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.App {
+  text-align: center;
+  background-color: $basecolor
+}
+html { height: auto;  background-color: $basecolor}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 20px;
+  width: 18rem;
+  display: flex;
+  background: $basecolor;
+  @include shadow
+}
+.searchbar{
+  border: ridge;
+  @include shadow
+}
+.logoimg {
+  width:12rem 
+}
+.form{
+  margin-top: 10px;
+}
+.addacity{
+  font-family: monospace;
+  margin-top: 8%;
+  color: #d36423;
+}
+.btnadd{
+  border-radius: 50px;
+  border: ridge;
+  background: #feca7e;
+  box-shadow: 20px 20px 60px #b1b1b0, -20px -20px 60px #f2f2f1;
+}
+.card-title {
+  margin-bottom: 15px;
+}
+.btnclose{
+@include shadow;
+border:none
+}
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+.info .h2{
+  font-family: monospace;
+}
+
